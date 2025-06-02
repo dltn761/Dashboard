@@ -21,10 +21,10 @@ def skillbridge_days_left():
         return f"{skillbridge_days_remaining} until you become an intern!"
 
 def question():
-    requested = input("What would you like to know today? ")
-    if requested == "days left":
+    requested = int(input("What would you like to know today? "))
+    if requested == 1:
         print(days_left())
-    elif requested == "skillbridge":
+    elif requested == 2:
         print(skillbridge_days_left())
     else:
         print("Please choose a correct input")
